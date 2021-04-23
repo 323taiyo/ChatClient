@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Setting">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="24sp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nameText"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/nameText"
+            android:inputType="textPersonName"
+            android:text="@string/name"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textServerAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/serverAddressText"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editServerAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/serverAddressText"
+            android:inputType="textPersonName"
+            android:text="@string/serverAddress"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textServerPort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/serverPortText"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editServerPort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/serverPortText"
+            android:inputType="textPersonName"
+            android:text="@string/serverPort"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnStart" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
